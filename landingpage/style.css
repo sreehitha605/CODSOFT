@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    height:200%;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing:border-box;
+    position: relative;
+    padding-bottom: 145px;
+}
+.navbar{
+    width:100%;
+    height:15vh;
+    margin:auto;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.search{
+    width:300px;
+    float:left;
+    margin-left: 150px;
+}
+.search.anim{
+    animation-delay: 1s;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width:200px;
+    height:30px;
+    text-align: center;
+    background:transparent;
+    border:2px solid #d62194;
+    margin-top:5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color:#1b1919;
+    border-right:none;
+    font-size: 18px;
+    float:left;
+    padding-right:30px;
+}
+.btn{
+    width:80px;
+    height:30px;
+    background:#d62194;
+    border:2px solid #e99ccc;
+    margin-top:5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color:#1b1919;
+    font-size: 17px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.logo{
+    width:180px;
+    height:60px;
+    cursor:pointer;
+    border-radius: 5px;
+    
+}
+.logo:hover{
+    border: 2px solid #1d3361;
+}
+.logo.anim{
+    animation-delay: 0.5s;
+}
+.main{
+    padding-left:70px;
+    float:left;
+    margin-top:5px;
+}
+.main.anim{
+    animation-delay: 1s;
+}
+
+.main ul{
+    flex:1;
+    float:left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main ul li{
+    list-style: none;
+    margin:0px 20px;
+    
+}
+.main ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#071f53;
+    font-style: italic;
+    
+}
+.main ul li a:hover{
+    color: #fc32b2;
+    border-bottom: 2px solid #1d3361;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    li
+}
+.cart{
+    width:40px;
+    cursor: pointer;
+}
+.cart.anim{
+    animation-delay: 1s;
+}
+.content h1{
+    font-size: 38px;
+    font-weight: 200;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#9b0564;
+    font-style: italic;
+    animation-delay: 2s;
+}
+.content p{
+    font-size:19px;
+    font-weight: 200;
+    color: #a0758f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-delay: 2.5s;
+}
+.content{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.content .btn1{
+    display: inline-block;
+    background: linear-gradient(85deg,#eea1d2,#bbbcbe);
+    border-top-left-radius: 15px;
+    /*border-bottom-left-radius: 15px;*/
+    border-bottom-right-radius: 15px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    text-decoration: none;
+    color:#1a1818;
+    border:2px solid #cc3193;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.content .btn1.anim{
+    animation-delay: 1.5s;
+}
+.arrow-icons{
+    margin-top: 25px;
+    display:flex;
+}
+.arrow-icons img{
+    width:40px;
+    margin-right: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow-icons.anim{
+    animation-delay: 3s;
+}
+.feature-img{
+    height:50%;
+    width:35%;
+    position: absolute;
+    top:180px;
+    bottom:0;
+    border-radius: 5%;
+   /* border:2px solid #cc3193;*/
+    right:20px;
+}
+.feature-img.anim{
+    animation-delay: 4s;
+}
+.social-links a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#203157;
+}
+.social-links.anim{
+    animation-delay: 3.5s;
+}
+.social-links a:hover{
+    color: #9b0564;
+    transform:translateY(-1px);
+}
+.social-links i{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 5px;
+    color: #232f4b;
+    display: inline-block;
+    margin-top:20px;
+    margin-left: 8%; 
+    animation-delay: 2.5s;
+}
+.social-links i:hover{
+    color: #9b0564;
+    transform:translateY(-1px);
+}
+.anim{
+    opacity:0;
+    transform: translateY(30px);
+    animation:moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+.log-in{
+    margin-left: 8%;
+    margin-top: 30px;
+}
+.log-in .btn1{
+    display: inline-block;
+    background: linear-gradient(65deg,#87adfe,#ff77cd);
+    border-radius: 10px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    text-decoration: none;
+    color:#1a1818;
+    border:2px solid #223b70;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.log-in .btn1.anim{
+    animation-delay: 3.8s;
+}
